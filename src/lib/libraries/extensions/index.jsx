@@ -1,5 +1,9 @@
+/* eslint-disable object-curly-spacing */
 import React from 'react';
-import {FormattedMessage} from 'react-intl';
+import { FormattedMessage } from 'react-intl';
+
+import datasciInsetIconURL from './datasci/your-extension-icon.png';
+import datasciIconURL from './datasci/your-extension-background.png';
 
 import musicIconURL from './music/music.png';
 import musicInsetIconURL from './music/music-small.svg';
@@ -48,6 +52,15 @@ import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
 export default [
     {
+        name: 'Data Science',
+        extensionId: 'datasci',
+        iconURL: datasciIconURL,
+        insetIconURL: datasciInsetIconURL,
+        description: 'Data Science in blocks',
+        featured: true,
+        disabled: false
+    },
+    {
         name: (
             <FormattedMessage
                 defaultMessage="Music"
@@ -55,7 +68,7 @@ export default [
                 id="gui.extension.music.name"
             />
         ),
-        extensionId: 'music',
+        extensionId: 'datasci',
         iconURL: musicIconURL,
         insetIconURL: musicInsetIconURL,
         description: (
